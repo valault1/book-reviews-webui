@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { EntityService } from "../services/entityService";
 import EntityViewer from "./EntityViewer";
-import { Container, Row, Col } from "react-bootstrap";
 import { Grid, TextField } from "@material-ui/core";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import useStateWithCallback from "use-state-with-callback";
 
 const FilterView = () => {
   var [entities, setEntities] = useState([]);
